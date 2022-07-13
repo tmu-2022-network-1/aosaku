@@ -1,0 +1,62 @@
+@charset "utf-8";
+body{margin:0;background:#ecebee;text-align:center}
+#scpr ul {
+	list-style: none;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0;
+}
+#scpr li {
+	position: relative;
+	height: 240px;
+	margin: 0;
+}
+#scpr.unsupported li {
+	z-index: 0;
+	overflow: hidden;
+	border-radius: .1px;
+}
+#scpr li:not(:first-child) {
+	margin-top: 8px;
+}
+#scpr li::after {
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #f5f6f8 center / 400px no-repeat;
+}
+#scpr:not(.unsupported) li::after {
+	position: absolute;
+	background-attachment: fixed;
+}
+#scpr.unsupported li::after {
+	position: fixed;
+}
+@media screen and (max-width: 767px) {
+	#scpr li::after { background-size: 350px; }
+}
+@media screen and (max-width: 567px) {
+	#scpr li::after { background-size: 300px; }
+}
+#scpr .f01::after { background-image: url(../../img/jump/01.png); }
+#scpr .f02::after { background-image: url(../../img/jump/02.png); }
+#scpr .f03::after { background-image: url(../../img/jump/03.png); }
+#scpr .f04::after { background-image: url(../../img/jump/04.png); }
+#scpr .f05::after { background-image: url(../../img/jump/05.png); }
+#scpr .f06::after { background-image: url(../../img/jump/06.png); }
+#scpr .f07::after { background-image: url(../../img/jump/07.png); }
+#scpr .f08::after { background-image: url(../../img/jump/08.png); }
+#scpr .f09::after { background-image: url(../../img/jump/09.png); }
+#scpr .f10::after { background-image: url(../../img/jump/10.png); }
+#scpr .f11::after { background-image: url(../../img/jump/11.png); }
+#scpr .f12::after { background-image: url(../../img/jump/12.png); }
+#scpr .f13::after { background-image: url(../../img/jump/13.png); }
+#scpr .f14::after { background-image: url(../../img/jump/14.png); }
+#scpr .f15::after { background-image: url(../../img/jump/15.png); }
+#scpr .f16::after { background-image: url(../../img/jump/16.png); }
+#scpr .f17::after { background-image: url(../../img/jump/17.png); }
+#scpr .f18::after { background-image: url(../../img/jump/18.png); }
+#scpr .f19::after { background-image: url(../../img/jump/19.png); }
+#scpr .f20::after { background-image: url(../../img/jump/20.png); }
