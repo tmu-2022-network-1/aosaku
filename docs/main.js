@@ -1,12 +1,17 @@
 const pageMostBottom = document.body.scrollHeight - window.innerHeight;
 
 window.addEventListener('scroll', function(){
-		let p=this.document.getElementsByClassName("img")[0];
-		const scr=Math.trunc(window.scrollY%500/100);
+		let p=this.document.getElementById("one");
+		let q=this.document.getElementById("two");
+		const scr=Math.trunc(window.scrollY%200/100);
 		console.log(scr);
+		//表示されるもの
+
 		if(scr==0){
-			p.style.opacity=0.1;
-		}else p.style.opacity=1;
+			q.style.opacity=1;
+		}else q.style.opacity=0;
+		
+		//
 
 		const scrollTop =document.documentElement.scrollTop;
 		if (scrollTop >= pageMostBottom) {
