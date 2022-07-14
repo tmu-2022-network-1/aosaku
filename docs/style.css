@@ -4,6 +4,8 @@ body{
 }
 
 .img{
+    filter: hue-rotate(0deg);
+    opacity: 0;
     width:80%;
     position: fixed;
     left: 50%;

@@ -1,8 +1,17 @@
 const pageMostBottom = document.body.scrollHeight - window.innerHeight;
-
-window.addEventListener('scroll', function(){
-		let p1=this.document.getElementById("a1");
+let scr=0;
+class walk {
+	pa;
+	constructor(amari,id){
+		this.ama=amari;
+		this.pa=document.getElementById(`${id}`);
+	}
+}
+let p1 = new walk(0,a1);
+console.log(p1);
+ 		//let p1=this.document.getElementById("a1");
 		let p2=this.document.getElementById("a2");
+		console.log(p2);
 		let p3=this.document.getElementById("a3");
 		let p4=this.document.getElementById("a4");
 		let p5=this.document.getElementById("a5");
@@ -27,10 +36,9 @@ window.addEventListener('scroll', function(){
 		let q6=this.document.getElementById("b6");
 		let q7=this.document.getElementById("b7");
 		let q8=this.document.getElementById("b8");
-		
-		const scr=Math.trunc(window.scrollY%1700/100);
+window.addEventListener('scroll', function(){	
+		scr=Math.trunc(window.scrollY%1700/100);
 		const scrb=Math.trunc(window.scrollY%800/100);
-		console.log(scr);
 		//表示されるもの
 
 		if(scrb==0){
@@ -58,12 +66,12 @@ window.addEventListener('scroll', function(){
 			q8.style.opacity=1;
 		}else q8.style.opacity=0;
 
-		if(scr==0){
+		/*if(scr==0){
 			p1.style.opacity=1;
 		}else p1.style.opacity=0;
 		if(scr==1){
 			p2.style.opacity=1;
-		}else p2.style.opacity=0;
+		}else p2.style.opacity=0;*/
 		if(scr==2){
 			p3.style.opacity=1;
 		}else p3.style.opacity=0;
@@ -109,8 +117,6 @@ window.addEventListener('scroll', function(){
 		if(scr==16){
 			p17.style.opacity=1;
 		}else p17.style.opacity=0;
-
-		
 		//
 
 		const scrollTop =document.documentElement.scrollTop;
