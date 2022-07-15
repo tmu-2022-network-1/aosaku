@@ -6,7 +6,7 @@ body{
 .img{
     filter: hue-rotate(0deg);
     opacity: 0;
-    width:80%;
+    width:50%;
     position: fixed;
     left: 50%;
     top: 50%;
@@ -14,9 +14,9 @@ body{
 }
 
 .imgb{
-    width:110%;
+    width:50%;
     position: fixed;
     left: 50%;
-    top: 60%;
+    top: 51%;
     transform: translateX(-50%)translateY(-50%);
 }
