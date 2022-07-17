@@ -53,6 +53,8 @@ window.addEventListener('scroll', function(){
 		this.document.getElementById("particles-js2").style.opacity=1;
 	}else this.document.getElementById("particles-js2").style.opacity=0;
 
+	this.document.getElementById("ship").style.left=sY/2+"px";
+
 	//連番雛形
 
 	if(sY<3000){

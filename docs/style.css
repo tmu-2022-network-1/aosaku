@@ -169,3 +169,13 @@ html,body{
     filter: hue-rotate(0deg);
     padding-top: 2600px;
 }
+
+.imgp{
+    margin-left: -8000px;
+    z-index: 3;
+    position:absolute;
+    opacity: 1;
+    width: 120%;
+    filter: hue-rotate(0deg);
+    padding-top: 15000px;
+}
