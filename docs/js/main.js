@@ -39,7 +39,10 @@ for(let j=0;j<50;j++){
 
 for(let j=0;j<8;j++){
 	document.write(`<img src="images/horse/${('0000'+(j+1)).slice(-4)}.png" class ="imgj" id="n${j+1}">`);
-	}
+	document.write(`<img src="images/horse/${('0000'+(j+1)).slice(-4)}.png" class ="imgj1" id="an${j+1}">`);
+	document.write(`<img src="images/horse/${('0000'+(j+1)).slice(-4)}.png" class ="imgj2" id="bn${j+1}">`);
+
+}
 
 window.addEventListener('scroll', function(){
 	let sY=this.window.scrollY;
@@ -196,14 +199,24 @@ window.addEventListener('scroll', function(){
 	
 		for(let i=0;i<8;i++){
 			this.document.getElementById(`n${i+1}`).style.top=sY/1.1+"px";
+			this.document.getElementById(`an${i+1}`).style.top=sY/1.1+"px";
+			this.document.getElementById(`bn${i+1}`).style.top=sY/1.1+"px";
 			horse[i]=i;
 			if(horse[i]==scrm){
 				this.document.getElementById(`n${i+1}`).style.opacity=1;
-			}else this.document.getElementById(`n${i+1}`).style.opacity=0;
+				this.document.getElementById(`an${i+1}`).style.opacity=1;
+				this.document.getElementById(`bn${i+1}`).style.opacity=1;
+			}else {
+				this.document.getElementById(`n${i+1}`).style.opacity=0;
+				this.document.getElementById(`an${i+1}`).style.opacity=0;
+				this.document.getElementById(`bn${i+1}`).style.opacity=0;
+			}
 		}
 	} else{
 		for(let i=0;i<8;i++){
 			this.document.getElementById(`n${i+1}`).style.opacity=0;
+			this.document.getElementById(`an${i+1}`).style.opacity=0;
+			this.document.getElementById(`bn${i+1}`).style.opacity=0;
 		}
 	}
 
