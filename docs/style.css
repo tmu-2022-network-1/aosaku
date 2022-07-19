@@ -75,7 +75,8 @@ html,body{
     z-index: 1;
     background-color: white;
     position: absolute;
-    width:100%;
+    left: -10px;;
+    width:101%;
     height:150%;
     top: 10000px;
     border: #b2dffb;
@@ -84,7 +85,8 @@ html,body{
 
 .scene2{
     z-index: 1;
-    width:100%;
+    left: -10px;;
+    width:101%;
     background-color: white;
     position: absolute;
     height:150%;
@@ -97,7 +99,8 @@ html,body{
     z-index: 1;
     background-color: white;
     position: absolute;
-    width:100%;
+    left: -10px;;
+    width:101%;
     height:150%;
     top: 30000px;
     border: #b2dffb;
@@ -125,7 +128,8 @@ html,body{
 .imgf{
     position:absolute;
     opacity: 0;
-    width:100%;
+    width:101%;
+    left:-10px;
     filter: hue-rotate(0deg);
     padding-top: 2000px;
 }
